@@ -44,10 +44,53 @@ body{
 
 #monitor ol{
     position: absolute;
-    top:10px;
+    top:8%;
+    color: green;
+    left:12%;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2em;
 }
 
 #monitor p{
     position: absolute;
     bottom:10px;
+}
+
+#list div{
+    margin-left:15%
+}
+
+@media (max-width:768px){
+    #monitor ol{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:625px){
+    #monitor ol{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:514px){
+    #monitor ol{
+        font-size: 10px;
+    }
+}
+@media (max-width:425px){
+    #monitor ol{
+        font-size: 8px;
+    }
+    #list div{
+        margin-left: 10%;
+    }
+}
+@media (max-width:320px){
+    #monitor ol{
+        font-size: 6px;
+    }
+    #list div{
+        margin-left: 5%;
+    }
 }

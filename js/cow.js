@@ -21,14 +21,63 @@ function check (){
                     }
                 }
             }
+            if (bulls==4){
+                for (var i=0;i<amount;i++){
+                    var elem = document.querySelector("li");
+                    document.getElementById('list').removeChild(elem);
+                    }
+                    var win_picture = document.createElement('div');
+                    win_picture.innerHTML="\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠉⠁⠄⠄⠄⠄⠈⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣇⠄⠄⠄⢀⣀⣀⣀⠄⠄⠄⠄⠄⢀⣀⣀⣀⡀⠄⠄⢠⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⡄⠄⣼⣿⣿⣿⣿⣷⠄⠄⠄⢀⣿⣿⣿⣿⣿⠄⠄⣼⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⠄⠹⣿⣿⣿⣿⠏⣰⣿⣷⡀⢿⣿⣿⣿⡿⠄⢸⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⠄⠄⠉⠛⠛⠁⢠⣿⣿⣿⣷⠄⠙⠛⠋⠄⠄⢸⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣄⣀⡀⠄⠄⠄⠈⠛⠋⠙⠋⠄⠄⠄⠄⣀⣀⣸⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⡄⠄⢀⡀⣀⠄⠄⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣧⣿⣿⣟⣿⢸⣧⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠸⡏⠿⢿⡿⣿⠛⠏⢿⠁⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠈⠁⠄⠄⠄⣠⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⡇⠄⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⢻⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⠁⠄⠄⠄⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠃⠄⠄⠸⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣧⣤⣶⣶⣶⣦⣄⠈⠙⠿⣿⣿⣿⡿⠟⠋⢁⣀⣀⣀⠄⢠⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⠄⠉⠁⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢉⣠⣴⣶⣶⣤⣌⡙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿<br>\
+                    ⣿⣿⣿⣿⣿⣿⡿⠟⢋⣡⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣈⠙⠻⢿⣿⣿⣿⣿<br>\
+                    ⠟⠛⠛⠛⠋⣁⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠄⠄⠄⣨<br>\
+                    ⣷⡄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⣼⣿<br>\
+                    ⣿⣿⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>";
+                    document.getElementById('list').style.lineHeight='1em';
+                    document.getElementById('list').appendChild(win_picture);
+                    document.getElementById('check').setAttribute('disabled','disabled');
+                    document.getElementById('submit').setAttribute('disabled','disabled');
+                    audio.src="sounds/cow_win.mp3";
+                    audio.autoplay=true;
+                    setTimeout(function(){location.href="index.html"},3000);
+            }
+            else{
+            audio.src="sounds/cow_answer.mp3";
+            audio.autoplay=true;
             var elem = document.createElement("li");
-            elem.innerHTML=guess_value+"\tБыков: "+bulls+"\tКоров: "+cows;
+            setTimeout(function(){elem.innerHTML=guess_value+"\tБыков: "+bulls+"\tКоров: "+cows},2000);
             document.getElementById('list').appendChild(elem);
-            amount++;}
-        else{
-            var elem = document.createElement("p");
-            elem.innerHTML="Ходы закончились";
-            document.getElementById('monitor').appendChild(elem);
+            amount++;}}
+        else{ for (var i=0;i<9;i++){
+            var elem = document.querySelector("li");
+            document.getElementById('list').removeChild(elem);
+            
+        }
+        elem = document.createElement("li");
+        elem.innerHTML="Вы исчерпали количество попыток.<a href='' onclick:'location.reload(true);' id:'reload'>Начать сначала</a>";
+        document.getElementById('list').appendChild(elem);
+        document.getElementById('check').setAttribute('disabled','disabled');
+        document.getElementById('submit').setAttribute('disabled','disabled')
         }
     }
     }
@@ -39,6 +88,7 @@ function randomInteger(min, max) {
 
 window.onload = function () {
     amount=0;
+    audio = new Audio();
     answer_array = [];
     while (answer_array.length < 4){
         var num = randomInteger(0,9);
