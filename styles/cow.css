@@ -29,7 +29,7 @@ body{
     font-size:30px;
 }
 
-.monitor{
+#monitor{
     position:relative;
     margin-left:auto;
     margin-right:auto;
@@ -37,12 +37,17 @@ body{
     max-width: 900px;
 }
 
-.monitor img{
+#monitor img{
     width:100%;
 }
 
 
-.monitor ol{
+#monitor ol{
     position: absolute;
     top:10px;
+}
+
+#monitor p{
+    position: absolute;
+    bottom:10px;
 }

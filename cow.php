@@ -13,7 +13,7 @@
         <button type="submit" id="submit" onclick="check()" >кек</button>
         <div id="wrong_length" style="display:none;">Введите 4 символа</div>
     </div>
-    <div class="monitor">
+    <div id="monitor">
         <img src="img/monitor.png" alt="monitor">
         <ol id="list">
 
