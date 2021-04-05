@@ -59,7 +59,7 @@ function check (){
                     document.getElementById('submit').setAttribute('disabled','disabled');
                     audio.src="sounds/cow_win.mp3";
                     audio.autoplay=true;
-                    setTimeout(function(){location.href="index.html"},3000);
+                    setTimeout(function(){location.href="pre_music.html"},3000);
             }
             else{
             audio.src="sounds/cow_answer.mp3";

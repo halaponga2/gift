@@ -78,7 +78,7 @@ function check(){
 if (guess.indexOf('4464321')!=-1){
     document.getElementById('correct').style.display="block";
     answer_song.play();
-    setTimeout(function(){location.href="index.html"},5000);
+    setTimeout(function(){location.href="pre_last_task.html"},5000);
     guess="0";
 }}
 
