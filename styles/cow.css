@@ -27,6 +27,7 @@ body{
 #wrong_length{
     color:rgb(241, 76, 76);
     font-size:30px;
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 1);
 }
 
 #monitor{

@@ -96,4 +96,9 @@ window.onload = function () {
             answer_array.push(num);
         }
     }
+    document.addEventListener('keyup',function(event){
+        if (event.key=="Enter"){
+            check();
+        }
+    });
 }

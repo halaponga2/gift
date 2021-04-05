@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/music.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="task">
+        <p>Еще одна детская песня, английская колыбельная, посвещенная массивному самосветящемуся небесному телу, в котором происходят термоядерные реакции. (начинать с ноты до)</p>
+    </div>
+    <div class="wrapper">
+    <div class="notes">
+        <button id="si1" onclick="si1_click();">Си</button>
+        <button id="doo" onclick="doo_click();">До</button>
+        <button id="re" onclick="re_click();">Ре</button>
+        <button id="mi" onclick="mi_click();">Ми</button>
+        <button id="fa" onclick="fa_click();">Фа</button>
+        <button id="sol" onclick="sol_click();">Соль</button>
+        <button id="la" onclick="la_click();">Ля</button>
+        <button id="si2" onclick="si2_click();">Си</button>
+    </div></div>
+    <div id="correct" style="display: none;">Верно!</div>
+    <div id='hint'>
+        <a href="" onclick="hint(); return false;">Подсказка</a>
+    </div>
+    <script src="js/music2.js"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@
         <img src="img/russia.jpg" alt="russia"></div>
         <div class="field">
             <input type="text" id="check"> 
-            <button type="submit" id="submit" onclick="nextPage()">кек</button>
+            <button type="submit" id="submit" onclick="nextPage()">Ответ</button>
         </div>
         <div id="answerstatus" style="display: none;">Неверно!</div>';}
         else echo '

@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+.wrapper img{
+    width: 100%;
+}

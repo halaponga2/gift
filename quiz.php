@@ -22,11 +22,13 @@
         <img src="img/traheya.jpg" alt="traheya">
         <img src="img/japan.jpg" alt="japan">
         <img src="img/letov.jpg" alt="letov"></div>
+        <p id="farsi">کتاب انحطاط غرب</p>
         <div class="field">
             <input type="text" id="check"> 
-            <button type="submit" id="submit" onclick="nextPage()">кек</button>
+            <button type="submit" id="submit" onclick="nextPage()">Ответ</button>
         </div>
-        <div id="answerstatus" style="display: none;">Неверно!</div>';}
+        <div id="answerstatus" style="display: none;">Неверно!</div>
+        ';}
         else echo '
             <h1>Ответ</h1>
             <img class="answer" src="img/psixo.jpg" alt="svetov">'    ;

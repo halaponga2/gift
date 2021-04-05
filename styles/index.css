@@ -1,0 +1,25 @@
+.wrapper p{
+    border: 1px solid white; 
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: black;
+    color:white;
+}
+button{
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.wrapper2{
+    display:flex;
+    justify-content: center;
+    
+}
